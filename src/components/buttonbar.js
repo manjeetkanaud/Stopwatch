@@ -23,6 +23,14 @@ var ButtonBar = React.createClass({
               <Text style = {this.props.style.fontWhite}>
                 Lap
               </Text>
+            </TouchableHighlight>
+            <TouchableHighlight  
+                underlayColor = '#ffffff'
+                onPress       = {() => this.handleResetButtonPress(this.props.updateState, this.props.getCurrentState)}
+                style         = {[this.props.style.button, this.props.style.lapButton]}>  
+              <Text style = {this.props.style.fontWhite}>
+                Reset
+              </Text>
             </TouchableHighlight> 
           
           </View>
@@ -30,6 +38,17 @@ var ButtonBar = React.createClass({
     },
     getStartButtonStyle(getCurrentState) {
         return getCurrentState().running ? this.props.style.stopButton : this.props.style.startButton;
+    },
+    handleResetButtonPress: function(updateState, getCurrentState) {
+        updateState({
+            timeElapsed : 0,
+            running     : false,
+            startTime   : null,
+            lap         : [],
+            dataSource  : getCurrentState().dataSource.cloneWithRows([])
+        });
+        BackgroundTimer.clearInterval(this.interval);
+        return;
     },
     handleLapButtonPress: async function(updateState, getCurrentState) {
         var intiLaps = getCurrentState().lap;

@@ -30,7 +30,7 @@ var common = StyleSheet.create({
   button: {
     borderWidth:2,
     height:60,
-    width:110,
+    width:100,
     borderRadius:28,
     justifyContent: 'center',
     alignItems: 'center'
