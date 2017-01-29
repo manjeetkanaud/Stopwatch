@@ -42,7 +42,6 @@ var ButtonBar = React.createClass({
         return;
     },
     handelStartButtonPress: function(updateState, getCurrentState) {
-        console.log(getCurrentState());
         if (getCurrentState().running) {
             updateState({
                 running:false
