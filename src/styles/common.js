@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 var common = StyleSheet.create({
   container: {
     flex:1,
-    alignItems: 'stretch'
+    alignItems: 'stretch',
+    backgroundColor:'#37486b'
   },
   header:{
     flex:1
@@ -23,32 +24,42 @@ var common = StyleSheet.create({
     alignItems: 'center'
   },
   timerText: {
-    fontSize:60
+    fontSize:80,
+    color:'white'
   },
   button: {
     borderWidth:2,
-    height:100,
-    width:100,
-    borderRadius:50,
+    height:60,
+    width:110,
+    borderRadius:28,
     justifyContent: 'center',
     alignItems: 'center'
   },
   startButton: {
-    borderColor:'#00CC00'
+    borderColor:'#ffffff',
   },
   stopButton: {
-    borderColor:'#CC0000'
+    borderColor:'#ffffff'
   },
   lapButton: {
-    borderColor:'#048272'
+    borderColor:'#ffffff'
   },
   lap: {
     justifyContent: 'space-around',
+    alignItems:'center',
     flexDirection: 'row',
-    borderColor:'#CC0000'
+    height:50,
+    padding:10,
+    borderRadius:28,
+    margin:15
   },
   lapText: {
-    fontSize:25
+    fontSize:18,
+    color:'#ffffff'
+  },
+  fontWhite:{
+    color:'#ffffff',
+    fontSize:15,
   }
 
 }); 

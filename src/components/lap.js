@@ -16,7 +16,8 @@ var Lap = React.createClass({
             dataSource = {getCurrentState().dataSource}
             enableEmptySections = {true}
             renderRow  = {
-              (rowData, sec, index) => <View style = {style.lap}>
+              (rowData, sec, index) => 
+              <View style = {[style.lap,this.border('#ffffff')]}>
                 <Text style = {style.lapText}>
                   Lap {parseInt(index)+1}
                 </Text>
@@ -25,6 +26,12 @@ var Lap = React.createClass({
             }
           />
         </View>
+    },
+    border: function(color) {
+        return {
+            borderColor: color,
+            borderWidth: 2
+        }
     }
 })
 

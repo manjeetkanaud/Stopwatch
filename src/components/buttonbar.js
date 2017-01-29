@@ -8,19 +8,19 @@ var ButtonBar = React.createClass({
           <View style= {this.props.style.buttonbar}>
            
             <TouchableHighlight  
-                underlayColor = 'grey' 
+                underlayColor = '#ffffff' 
                 onPress       = {() => this.handelStartButtonPress(this.props.updateState, this.props.getCurrentState)}
                 style         = {[this.props.style.button, this.getStartButtonStyle(this.props.getCurrentState)]}> 
-              <Text> 
+              <Text style = {this.props.style.fontWhite}> 
                 {this.props.getCurrentState().running ? "Stop" : "Start"}
               </Text>
             </TouchableHighlight>
             
             <TouchableHighlight  
-                underlayColor = "grey" 
+                underlayColor = '#ffffff'
                 onPress       = {() => this.handleLapButtonPress(this.props.updateState, this.props.getCurrentState)}
                 style         = {[this.props.style.button, this.props.style.lapButton]}>  
-              <Text>
+              <Text style = {this.props.style.fontWhite}>
                 Lap
               </Text>
             </TouchableHighlight> 
