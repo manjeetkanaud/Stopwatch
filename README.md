@@ -7,9 +7,8 @@ Reset Button!
 
 Easy to read large digits and a full screen mode.
 Stopwatch
-★ Lap function
-★ 1/30ths second 
-★ Last lap time display
+###### ★ Lap function
+###### ★ 1/30ths second 
+###### ★ Last lap time display
 
-
-Play Store Link :  https://play.google.com/store/apps/details?id=com.kanaudstopwatch&rdid=com.kanaudstopwatch
+[Play Store Link](https://play.google.com/store/apps/details?id=com.kanaudstopwatch&rdid=com.kanaudstopwatch)
