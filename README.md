@@ -11,4 +11,5 @@ Stopwatch
 ###### ★ 1/30ths second 
 ###### ★ Last lap time display
 
-[Play Store Link](https://play.google.com/store/apps/details?id=com.kanaudstopwatch&rdid=com.kanaudstopwatch)
+
+[Play Store Link](https://play.google.com/store/apps/details?id=com.kanaudstopwatch)
