@@ -1,4 +1,4 @@
-package com.stopwatch;
+package com.kanaudstopwatch;
 
 import com.facebook.react.ReactActivity;
 
