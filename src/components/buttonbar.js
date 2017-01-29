@@ -31,7 +31,7 @@ var ButtonBar = React.createClass({
     getStartButtonStyle(getCurrentState) {
         return getCurrentState().running ? this.props.style.stopButton : this.props.style.startButton;
     },
-    handleLapButtonPress: function(updateState, getCurrentState) {
+    handleLapButtonPress: async function(updateState, getCurrentState) {
         var intiLaps = getCurrentState().lap;
         if (!getCurrentState().running && intiLaps[intiLaps.length-1] == getCurrentState().timeElapsed ) {
             return;
