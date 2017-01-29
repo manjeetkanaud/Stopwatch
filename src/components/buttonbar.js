@@ -33,6 +33,9 @@ var ButtonBar = React.createClass({
     },
     handleLapButtonPress: function(updateState, getCurrentState) {
         var intiLaps = getCurrentState().lap;
+        if (!getCurrentState().running && intiLaps[intiLaps.length-1] == getCurrentState().timeElapsed ) {
+            return;
+        }
         var laps = intiLaps.concat([getCurrentState().timeElapsed]);
         updateState({
             startTime : new Date(),
