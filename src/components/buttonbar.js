@@ -32,11 +32,12 @@ var ButtonBar = React.createClass({
         return getCurrentState().running ? this.props.style.stopButton : this.props.style.startButton;
     },
     handleLapButtonPress: function(updateState, getCurrentState) {
-        var lapTime = getCurrentState().timeElapsed;
+        var intiLaps = getCurrentState().lap;
+        var laps = intiLaps.concat([getCurrentState().timeElapsed]);
         updateState({
             startTime : new Date(),
-            lap       : getCurrentState().lap.concat([lapTime]),
-            dataSource : getCurrentState().dataSource.cloneWithRows(getCurrentState().lap)
+            lap       : laps,
+            dataSource : getCurrentState().dataSource.cloneWithRows(laps)
 
         });
         return;
